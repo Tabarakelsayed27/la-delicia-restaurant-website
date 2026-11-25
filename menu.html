@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211108">
+  <title>La Delicia | Fine Dining</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="menu">
+
+  <!-- Main Header and Navigation -->
+  <header class="site-header">
+    <nav class="nav-wrap">
+      <a class="brand" href="home.html"><span class="brand-name">La Delicia</span></a>
+      <button class="mobile-toggle" aria-label="Open navigation">☰</button>
+      <div class="nav-links">
+        <a href="home.html" data-page="home">Home</a>
+        <a href="menu.html" data-page="menu">Menu</a>
+        <a href="reservation.html" data-page="reservation">Reservation</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="gallery.html" data-page="gallery">Gallery</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+        <a href="cart.html" class="cart-link">Cart <span id="cartCount">0</span></a>
+        <a href="profile.html" class="profile-link">♟ My Profile</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Menu Page Banner -->
+    <section class="page-banner menu-banner">
+      <div>
+        <p class="eyebrow">A TASTE FOR EVERY MOMENT</p>
+        <h1>Our Menu</h1>
+        <p>Discover our selection of signature dishes, crafted with love.</p>
+      </div>
+    </section>
+    <!-- Menu Items and Filters Section -->
+    <section class="cream-section menu-page-section">
+      <div class="section-title"><span></span>
+        <h2>Explore Our Dishes</h2><span></span>
+      </div>
+      <div class="ornament">✦</div>
+      <!-- Menu Search and Category Filters -->
+      <div class="menu-toolbar">
+        <div class="menu-filters"><button class="filter-btn active" data-filter="all">All</button><button
+            class="filter-btn" data-filter="pasta">Pasta</button><button class="filter-btn"
+            data-filter="steak">Steak</button><button class="filter-btn" data-filter="seafood">Seafood</button><button
+            class="filter-btn" data-filter="pizza">Pizza</button><button class="filter-btn"
+            data-filter="salad">Salads</button><button class="filter-btn" data-filter="dessert">Desserts</button><button
+            class="filter-btn" data-filter="drinks">Drinks</button></div><input id="menuSearch" class="menu-search"
+          type="search" placeholder="Search dishes...">
+      </div>
+      <!-- Menu Products Grid -->
+      <div class="products-grid">
+
+        <article class="menu-product" data-category="pasta">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=750&q=85"
+              alt="Truffle Risotto"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Truffle Risotto</h3>
+              <p>Creamy risotto with wild mushrooms and truffle.</p>
+            </div>
+            <div class="product-bottom"><b>$18</b><button class="add-cart" data-name="Truffle Risotto"
+                data-price="18">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="pasta">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=750&q=85"
+              alt="Garlic Prawn Pasta"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Garlic Prawn Pasta</h3>
+              <p>Succulent prawns tossed with garlic and herbs.</p>
+            </div>
+            <div class="product-bottom"><b>$20</b><button class="add-cart" data-name="Garlic Prawn Pasta"
+                data-price="20">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="seafood">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=750&q=85"
+              alt="Herb Crusted Salmon"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Herb Crusted Salmon</h3>
+              <p>Fresh salmon with herbs and seasonal greens.</p>
+            </div>
+            <div class="product-bottom"><b>$24</b><button class="add-cart" data-name="Herb Crusted Salmon"
+                data-price="24">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="seafood">
+          <div class="product-photo"><img src="https://cookbylove.com/wp-content/uploads/2026/04/0_1-1776867350998.jpeg"
+              alt="Seared Scallops"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Seared Scallops</h3>
+              <p>Golden scallops with lemon butter and herbs.</p>
+            </div>
+            <div class="product-bottom"><b>$28</b><button class="add-cart" data-name="Seared Scallops"
+                data-price="28">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="steak">
+          <div class="product-photo"><img
+              src="https://csp.aaa.com/nuxeo/site/public/transform/default/70ef1645-eb9b-491b-8d34-37ce67b1e925?compressionLevel=75"
+              alt="Roasted Lamb Rack"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Roasted Lamb Rack</h3>
+              <p>Tender lamb with rosemary and rich jus.</p>
+            </div>
+            <div class="product-bottom"><b>$32</b><button class="add-cart" data-name="Roasted Lamb Rack"
+                data-price="32">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="steak">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=750&q=85"
+              alt="Grilled Ribeye"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Grilled Ribeye</h3>
+              <p>Prime ribeye, roasted garlic butter and greens.</p>
+            </div>
+            <div class="product-bottom"><b>$36</b><button class="add-cart" data-name="Grilled Ribeye"
+                data-price="36">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="pizza">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=750&q=85"
+              alt="Margherita Pizza"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Margherita Pizza</h3>
+              <p>Classic pizza with mozzarella and fresh basil.</p>
+            </div>
+            <div class="product-bottom"><b>$16</b><button class="add-cart" data-name="Margherita Pizza"
+                data-price="16">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="pizza">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=750&q=85"
+              alt="Prosciutto Pizza"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Prosciutto Pizza</h3>
+              <p>Thin crust, fresh rocket and shaved parmesan.</p>
+            </div>
+            <div class="product-bottom"><b>$19</b><button class="add-cart" data-name="Prosciutto Pizza"
+                data-price="19">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="salad">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=750&q=85"
+              alt="Caesar Salad"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Caesar Salad</h3>
+              <p>Crisp romaine with parmesan and house dressing.</p>
+            </div>
+            <div class="product-bottom"><b>$14</b><button class="add-cart" data-name="Caesar Salad" data-price="14">Add
+                to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="salad">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=750&q=85"
+              alt="Garden Harvest Salad"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Garden Harvest Salad</h3>
+              <p>Seasonal greens, avocado and citrus dressing.</p>
+            </div>
+            <div class="product-bottom"><b>$15</b><button class="add-cart" data-name="Garden Harvest Salad"
+                data-price="15">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="dessert">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=750&q=85"
+              alt="Chocolate Lava Cake"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Chocolate Lava Cake</h3>
+              <p>Warm chocolate cake with a molten centre.</p>
+            </div>
+            <div class="product-bottom"><b>$12</b><button class="add-cart" data-name="Chocolate Lava Cake"
+                data-price="12">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="dessert">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=750&q=85"
+              alt="New York Cheesecake"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>New York Cheesecake</h3>
+              <p>Classic cheesecake with berry compote.</p>
+            </div>
+            <div class="product-bottom"><b>$13</b><button class="add-cart" data-name="New York Cheesecake"
+                data-price="13">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="dessert">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=750&q=85"
+              alt="Fresh Berry Tart"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Fresh Berry Tart</h3>
+              <p>Buttery pastry, vanilla cream and fresh berries.</p>
+            </div>
+            <div class="product-bottom"><b>$12</b><button class="add-cart" data-name="Fresh Berry Tart"
+                data-price="12">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="drinks">
+          <div class="product-photo"><img
+              src="https://images.pexels.com/photos/34269342/pexels-photo-34269342.jpeg?auto=compress&cs=tinysrgb&w=900"
+              alt="Fresh orange citrus mocktail"><button class="heart-btn" aria-label="Add to favourites">♡</button>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Citrus Garden</h3>
+              <p>Fresh orange, lime, mint and sparkling water.</p>
+            </div>
+            <div class="product-bottom"><b>$9</b><button class="add-cart" data-name="Citrus Garden" data-price="9">Add
+                to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="drinks">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=750&q=85"
+              alt="Berry Cooler"><button class="heart-btn" aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Berry Cooler</h3>
+              <p>Mixed berries, fresh lemon and crushed ice.</p>
+            </div>
+            <div class="product-bottom"><b>$10</b><button class="add-cart" data-name="Berry Cooler" data-price="10">Add
+                to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="pasta">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=750&q=85"
+              alt="Creamy Alfredo Pasta" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Creamy Alfredo Pasta</h3>
+              <p>Rich parmesan cream sauce with fresh herbs.</p>
+            </div>
+            <div class="product-bottom"><b>$19</b><button class="add-cart" data-name="Creamy Alfredo Pasta"
+                data-price="19">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="pasta">
+          <div class="product-photo"><img
+              src="https://simplyyummybites.com/wp-content/uploads/2025/09/Classic_Baked_Lasagna_with_Beef_Sauce-3.webp"
+              alt="Classic Beef Lasagna" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Classic Beef Lasagna</h3>
+              <p>Slow-cooked beef layered with pasta and cheese.</p>
+            </div>
+            <div class="product-bottom"><b>$21</b><button class="add-cart" data-name="Classic Beef Lasagna"
+                data-price="21">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="pasta">
+          <div class="product-photo"><img
+              src="https://www.finedininglovers.com/sites/default/files/places/flora-chijmsw13xxbwokrbtzkozs-4t8-2.png"
+              alt="Pesto Penne Pasta" loading="lazy"><button class="heart-btn" aria-label="Add to favourites">♡</button>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Pesto Penne</h3>
+              <p>Basil pesto, cherry tomatoes and parmesan.</p>
+            </div>
+            <div class="product-bottom"><b>$18</b><button class="add-cart" data-name="Pesto Penne" data-price="18">Add
+                to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="seafood">
+          <div class="product-photo"><img
+              src="https://cdn.cheftaling.com/images/dbfaa4c8-2f36-416e-9acd-ddb93c0bb45f_1_01aa14fb.webp"
+              alt="Lemon butter shrimp with garlic, parsley and lemon" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Lemon Butter Shrimp</h3>
+              <p>Juicy shrimp with lemon butter and parsley.</p>
+            </div>
+            <div class="product-bottom"><b>$23</b><button class="add-cart" data-name="Lemon Butter Shrimp"
+                data-price="23">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="seafood">
+          <div class="product-photo"><img
+              src="https://cdn.thefork.com/tf-lab/image/upload/w_500%2Ch_500%2Cc_fill%2Cq_auto%2Cf_auto%2Cg_auto%3Asubject/restaurant/9a39cbc8-3c88-4ec0-9b41-803d7971e2bd/6060a5a6-f78f-420e-ab30-1c3a295a75ae.jpg"
+              alt="Grilled Sea Bass Fillet" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Grilled Sea Bass</h3>
+              <p>Delicate sea bass with herbs and lemon.</p>
+            </div>
+            <div class="product-bottom"><b>$27</b><button class="add-cart" data-name="Grilled Sea Bass"
+                data-price="27">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="seafood">
+          <div class="product-photo"><img
+              src="https://www.squidfishing.com.au/images/fresh-squid-my-way/garlic-butter-calamari.webp"
+              alt="Garlic Butter Calamari with Lemon and Parsley" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Garlic Butter Calamari</h3>
+              <p>Crispy calamari with garlic and citrus dip.</p>
+            </div>
+            <div class="product-bottom"><b>$19</b><button class="add-cart" data-name="Garlic Butter Calamari"
+                data-price="19">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="steak">
+          <div class="product-photo"><img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=750&q=85"
+              alt="Peppercorn Filet Mignon" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Peppercorn Filet Mignon</h3>
+              <p>Tender filet with creamy peppercorn sauce.</p>
+            </div>
+            <div class="product-bottom"><b>$38</b><button class="add-cart" data-name="Peppercorn Filet Mignon"
+                data-price="38">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="steak">
+          <div class="product-photo"><img
+              src="https://cdn.istores.co.il/image/upload/clients/17057/4803ac07550cf7b1a7a2cd356338776be19787ef.jpeg"
+              alt="Classic Beef Tenderloin" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Classic Beef Tenderloin</h3>
+              <p>Grilled tenderloin with rosemary potatoes.</p>
+            </div>
+            <div class="product-bottom"><b>$35</b><button class="add-cart" data-name="Classic Beef Tenderloin"
+                data-price="35">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="steak">
+          <div class="product-photo"><img src="https://manbq.com/wp-content/uploads/2024/12/Bbq-Short-Ribs-Recipe.jpg"
+              alt="BBQ Short Ribs" loading="lazy"><button class="heart-btn" aria-label="Add to favourites">♡</button>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>BBQ Short Ribs</h3>
+              <p>Slow-braised ribs glazed with smoky BBQ.</p>
+            </div>
+            <div class="product-bottom"><b>$34</b><button class="add-cart" data-name="BBQ Short Ribs"
+                data-price="34">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="pizza">
+          <div class="product-photo"><img src="https://epicureannest.com/wp-content/uploads/2025/12/0_3_640_N-108.webp"
+              alt="Four Cheese Pizza" loading="lazy"><button class="heart-btn" aria-label="Add to favourites">♡</button>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Four Cheese Pizza</h3>
+              <p>Mozzarella, parmesan, gorgonzola and ricotta.</p>
+            </div>
+            <div class="product-bottom"><b>$20</b><button class="add-cart" data-name="Four Cheese Pizza"
+                data-price="20">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="pizza">
+          <div class="product-photo"><img
+              src="https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/recipe_pics_v2/medium/lebanese_olive_pizza.jpg"
+              alt="Mediterranean Olive and Feta Pizza" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Mediterranean Pizza</h3>
+              <p>Olives, feta, peppers and fresh oregano.</p>
+            </div>
+            <div class="product-bottom"><b>$18</b><button class="add-cart" data-name="Mediterranean Pizza"
+                data-price="18">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="salad">
+          <div class="product-photo"><img
+              src="https://withloveandflavor.com/wp-content/uploads/2025/12/shrimp-and-avocado-salad-1024x847.webp"
+              alt="Avocado Prawn Salad" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Avocado Prawn Salad</h3>
+              <p>Fresh avocado, prawns and lemon dressing.</p>
+            </div>
+            <div class="product-bottom"><b>$17</b><button class="add-cart" data-name="Avocado Prawn Salad"
+                data-price="17">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="salad">
+          <div class="product-photo"><img
+              src="https://www.kamis.pl/-/media/project/oneweb/kampl22/recipe-images/2023-05/greek_salad_garlic_vinegar_cashews_800x800.jpg?extension=webp&hash=45C5FCCD2A315CFFEC50F03085DEC015&rev=04276d6de9614b8186524dcceeb4996f&vd=20260528T233847Z"
+              alt="Greek Salad with Feta and Olives" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Mediterranean Greek Salad</h3>
+              <p>Tomatoes, cucumber, feta and olives.</p>
+            </div>
+            <div class="product-bottom"><b>$14</b><button class="add-cart" data-name="Mediterranean Greek Salad"
+                data-price="14">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="dessert">
+          <div class="product-photo"><img
+              src="https://www.tastoeffeuno.it/cucina/img/ricette/panna-cotta-alla-vaniglia.png"
+              alt="Vanilla Panna Cotta" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Vanilla Panna Cotta</h3>
+              <p>Silky vanilla cream with berry coulis.</p>
+            </div>
+            <div class="product-bottom"><b>$11</b><button class="add-cart" data-name="Vanilla Panna Cotta"
+                data-price="11">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="drinks">
+          <div class="product-photo"><img
+              src="https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/caramel_iced_latte.jpg"
+              alt="Iced Caramel Latte" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Iced Caramel Latte</h3>
+              <p>Chilled espresso with milk and caramel.</p>
+            </div>
+            <div class="product-bottom"><b>$7</b><button class="add-cart" data-name="Iced Caramel Latte"
+                data-price="7">Add to Cart +</button></div>
+          </div>
+        </article>
+
+        <article class="menu-product" data-category="drinks">
+          <div class="product-photo"><img
+              src="https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/mango-maracuya_fresh_juice.jpg"
+              alt="Mango Passion Cooler" loading="lazy"><button class="heart-btn"
+              aria-label="Add to favourites">♡</button></div>
+          <div class="product-info">
+            <div>
+              <h3>Mango Passion Cooler</h3>
+              <p>Tropical mango and passion fruit refresher.</p>
+            </div>
+            <div class="product-bottom"><b>$9</b><button class="add-cart" data-name="Mango Passion Cooler"
+                data-price="9">Add to Cart +</button></div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="menu-note">Please let our team know about allergies or dietary requirements.</p>
+
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+
+  <footer class="footer">
+    <a class="footer-brand" href="home.html">La Delicia</a>
+    <p>Good Food. Good Mood ♡</p>
+    <div class="footer-links">
+      <a href="home.html">Home</a><a href="menu.html">Menu</a><a href="reservation.html">Reservation</a>
+      <a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    </div>
+    <small>© 2026 La Delicia. All rights reserved.</small>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/201234567890" target="_blank" aria-label="WhatsApp">✆</a>
+  <script src="script.js"></script>
+</body>
+
+</html>
