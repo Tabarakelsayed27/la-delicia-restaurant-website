@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211108">
+  <title>La Delicia | Fine Dining</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="profile">
+  <!-- Main Header and Navigation -->
+  <header class="site-header">
+    <nav class="nav-wrap">
+      <a class="brand" href="home.html"><span class="brand-name">La Delicia</span><small>⌖ Zamalek, Cairo, Egypt</small></a>
+      <button class="mobile-toggle" aria-label="Open navigation">☰</button>
+      <div class="nav-links">
+        <a href="home.html" data-page="home">Home</a>
+        <a href="menu.html" data-page="menu">Menu</a>
+        <a href="reservation.html" data-page="reservation">Reservation</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="gallery.html" data-page="gallery">Gallery</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+        <a href="cart.html" class="cart-link">Cart <span id="cartCount">0</span></a>
+        <a href="profile.html" class="profile-link">♟ My Profile</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Profile Page Banner -->
+    <section class="page-banner profile-banner">
+      <div>
+        <p class="eyebrow">YOUR LA DELICIA SPACE</p>
+        <h1>My Profile</h1>
+        <p>Manage your details and your dining favourites.</p>
+      </div>
+    </section>
+    <!-- Profile Content Section -->
+    <section class="cream-section profile-page">
+      <!-- Profile Details Card -->
+      <div class="profile-card">
+        <div class="profile-avatar">♟</div>
+        <p class="eyebrow dark">MEMBER DETAILS</p>
+        <h2 id="profileName">Welcome, Guest</h2>
+        <p id="profileEmail">Sign in to personalise your experience.</p><button id="logoutBtn" class="gold-button">Sign
+          Out <b>›</b></button>
+      </div>
+      <!-- Membership Benefits Section -->
+      <div class="profile-benefits">
+        <h2>A Little More Delight</h2>
+        <p>Save dishes you love, keep your details close and make your next visit even easier.</p><a href="menu.html"
+          class="text-link">Explore the Menu →</a>
+      </div>
+    </section>
+  </main>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <a class="footer-brand" href="home.html">La Delicia</a>
+    <p>Good Food. Good Mood ♡</p>
+    <div class="footer-links">
+      <a href="home.html">Home</a><a href="menu.html">Menu</a><a href="reservation.html">Reservation</a>
+      <a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    </div>
+    <small>© 2026 La Delicia. All rights reserved.</small>
+  </footer>
+  <a class="floating-whatsapp" href="https://wa.me/201234567890" target="_blank" aria-label="WhatsApp">✆</a>
+  <script src="script.js"></script>
+</body>
+
+</html>

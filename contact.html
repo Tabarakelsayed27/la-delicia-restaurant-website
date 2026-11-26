@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211108">
+  <title>La Delicia | Fine Dining</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="contact">
+  <!-- Main Header and Navigation -->
+  <header class="site-header">
+    <nav class="nav-wrap">
+      <a class="brand" href="home.html"><span class="brand-name">La Delicia</span><small>⌖ Zamalek, Cairo, Egypt</small></a>
+      <button class="mobile-toggle" aria-label="Open navigation">☰</button>
+      <div class="nav-links">
+        <a href="home.html" data-page="home">Home</a>
+        <a href="menu.html" data-page="menu">Menu</a>
+        <a href="reservation.html" data-page="reservation">Reservation</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="gallery.html" data-page="gallery">Gallery</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+        <a href="cart.html" class="cart-link">Cart <span id="cartCount">0</span></a>
+        <a href="profile.html" class="profile-link">♟ My Profile</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Contact Page Banner -->
+    <section class="page-banner contact-banner">
+      <div>
+        <p class="eyebrow">WE'RE HERE FOR YOU</p>
+        <h1>Contact Us</h1>
+        <p>Questions, feedback or a special request? We'd love to hear from you.</p>
+      </div>
+    </section>
+    <!-- Contact Content Section -->
+    <section class="cream-section contact-page">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <p class="eyebrow dark">GET IN TOUCH</p>
+        <h2>Let's Start<br>a Conversation</h2>
+        <p>Reach out to our team or visit us for an unforgettable dining experience.</p>
+        <a href="tel:+201234567890"><span>☎</span>
+          <div><small>CALL US</small><b>+20 123 456 7890</b></div>
+        </a>
+        <a href="mailto:hello@ladelicia.com"><span>✉</span>
+          <div><small>EMAIL US</small><b>hello@ladelicia.com</b></div>
+        </a>
+        <a href="https://maps.google.com/?q=Zamalek+Cairo+Egypt" target="_blank"><span>⌖</span>
+          <div><small>FIND US</small><b>Zamalek, Cairo, Egypt</b></div>
+        </a>
+        <a class="whatsapp-button" href="https://wa.me/201234567890" target="_blank">Chat on WhatsApp ↗</a>
+      </div>
+      <!-- Contact Form Panel -->
+      <div class="contact-form-card">
+        <h2>Send a Message</h2>
+        <!-- Contact Form -->
+        <form id="contactForm" class="styled-form"><label>Your Name<input name="name" placeholder="Enter your name"
+              required></label><label>Email Address<input name="email" type="email" placeholder="Enter your email"
+              required></label><label>Subject<input name="subject"
+              placeholder="How can we help?"></label><label>Message<textarea name="message" rows="5"
+              placeholder="Write your message..." required></textarea></label><button
+            class="gold-button full-button">Send Message <b>›</b></button><small id="contactFeedback"
+            class="form-feedback"></small></form>
+      </div>
+    </section>
+  </main>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <a class="footer-brand" href="home.html">La Delicia</a>
+    <p>Good Food. Good Mood ♡</p>
+    <div class="footer-links">
+      <a href="home.html">Home</a><a href="menu.html">Menu</a><a href="reservation.html">Reservation</a>
+      <a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    </div>
+    <small>© 2026 La Delicia. All rights reserved.</small>
+  </footer>
+  <a class="floating-whatsapp" href="https://wa.me/201234567890" target="_blank" aria-label="WhatsApp">✆</a>
+  <script src="script.js"></script>
+</body>
+
+</html>
